@@ -1,15 +1,23 @@
-  # 💘 AI Crush Prediction
+# 💘 AI Crush Prediction
 
-A fun AI-based web application that predicts whether your crush likes you
+A fun AI-based web application that predicts whether your crush likes you  
 based on interaction patterns.
 
-  ## 🚀 Features
+## 🚀 Features
 - Neural Network (MLP) using TensorFlow
 - Flask backend
 - Interactive UI with hearts & confetti
 - Binary classification (Like / Not Like)
--
-**##Project Structure**
+
+## 🧠 Model Inputs
+- Texts first
+- Reply speed
+- Emoji usage
+- Eye contact
+- Shares personal things
+
+## 📁 Project Structure
+```text
 crush_prediction/
 │
 ├─ templates/
@@ -21,22 +29,14 @@ crush_prediction/
 │   └─ script.js           ← Hearts animation + cursor + clicks
 │
 ├─ app.py                 ← Flask backend
-├─ model.py               ← Your AI model (optional for training)
+├─ model.py               ← AI model (optional for training)
 
-  ## 🧠 Model Inputs
-- Texts first
-- Reply speed
-- Emoji usage
-- Eye contact
-- Shares personal things
+🛠 Tech Stack
+Python
+TensorFlow / Keras
+Flask
+HTML, CSS, JavaScript
 
-  ## 🛠 Tech Stack
-- Python
-- TensorFlow / Keras
-- Flask
-- HTML, CSS, JavaScript
-
-  ## ▶ How to Run
-```bash
+▶ How to Run
 pip install -r requirements.txt
 python app.py
