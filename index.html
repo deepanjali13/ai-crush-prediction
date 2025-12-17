@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Crush Prediction
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+<div class="glow-wrapper" data-text="crushprediction" >
+    <div class="center-text"></div>    
+</div>
+<div class="hearts-container"></div>
+ <script src="{{ url_for('static', filename='script.js') }}"></script>
+ <script>
+  document.addEventListener("click", () => {
+    window.location.href = "/prediction";
+  });
+</script>
+
+</body>
+</html>

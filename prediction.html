@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>Does your crush like you? 💘</h2>
+<div class="form-row">
+  <label>Do they text first?</label>
+  <select id="texts_first">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+  </select>
+</div>
+
+<div class="form-row">
+  <label>Reply speed (0–10)</label>
+  <input type="number" id="reply_speed" min="0" max="10">
+</div>
+
+<div class="form-row">
+  <label>Emoji usage (0–10)</label>
+  <input type="number" id="emoji_usage" min="0" max="10">
+</div>
+
+<div class="form-row">
+  <label>Eye contact (0–10)</label>
+  <input type="number" id="eye_contact" min="0" max="10">
+</div>
+
+<div class="form-row">
+  <label>Share personal things?</label>
+  <select id="shares_personal">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+  </select>
+</div>
+
+
+
+
+<br><br>
+<button type="button" onclick="predictCrush()">Predict 💗</button>
+<h3 id="result"></h3>
+
+<div id="resultBox" class="result hidden">
+  <div id="heartIcon">💗</div>
+  <div id="resultText"></div>
+  <div id="percentText"></div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
